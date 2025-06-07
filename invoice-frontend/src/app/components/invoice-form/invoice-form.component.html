@@ -1,0 +1,35 @@
+<h2>Generate Invoice</h2>
+<form [formGroup]="invoiceForm" (ngSubmit)="submitInvoice()">
+  <label>Date:</label>
+  <input type="date" formControlName="transactionDate" />
+
+  <div formArrayName="items">
+    <div *ngFor="let item of items.controls; let i = index" [formGroupName]="i" class="product-group">
+      <label>Product:</label>
+      <select formControlName="productId">
+        <option [ngValue]="null" disabled>Select a product</option>
+        <option *ngFor="let product of products" [ngValue]="product.productId">
+          {{ product.name }} (Rs.{{ product.price }})
+        </option>
+      </select>
+
+      <label>Quantity:</label>
+      <input type="number" formControlName="quantity" />
+      
+      <button type="button" (click)="removeItem(i)">Remove</button>
+    </div>
+  </div>
+
+  <button type="button" (click)="addItem()">Add Product</button>
+
+  <label>Discount (%):</label>
+  <input type="number" formControlName="discount" />
+
+  <label>Total Amount:</label>
+  <input type="number" formControlName="totalAmount" [disabled]="true" />
+
+  <label>Balance Amount:</label>
+  <input type="number" formControlName="balanceAmount" [disabled]="true" />
+
+  <button type="submit" [disabled]="invoiceForm.invalid">Submit Invoice</button>
+</form>

@@ -1,0 +1,6 @@
+@MCComputers.InvoiceAPI_HostAddress = http://localhost:5283
+
+GET {{MCComputers.InvoiceAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

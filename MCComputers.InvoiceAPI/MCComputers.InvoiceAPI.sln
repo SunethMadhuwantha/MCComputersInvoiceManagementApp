@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MCComputers.InvoiceAPI", "MCComputers.InvoiceAPI\MCComputers.InvoiceAPI.csproj", "{99A4CC84-B185-4917-B700-320F3E3440A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCComputers.InvoiceAPI.Tests", "MCComputers.InvoiceAPI.Tests\MCComputers.InvoiceAPI.Tests.csproj", "{F557F77C-5A93-4B3E-96EA-A6C928549B85}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99A4CC84-B185-4917-B700-320F3E3440A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99A4CC84-B185-4917-B700-320F3E3440A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99A4CC84-B185-4917-B700-320F3E3440A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99A4CC84-B185-4917-B700-320F3E3440A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F557F77C-5A93-4B3E-96EA-A6C928549B85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F557F77C-5A93-4B3E-96EA-A6C928549B85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F557F77C-5A93-4B3E-96EA-A6C928549B85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F557F77C-5A93-4B3E-96EA-A6C928549B85}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E6050D5A-71A1-4398-B8C6-38DE2D548358}
+	EndGlobalSection
+EndGlobal
